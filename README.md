@@ -5,15 +5,16 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 ## O que está incluído
 
 - Cadastro de compromissos pessoais, universitários e profissionais.
+- Opção de criar compromissos de dia inteiro.
 - Escolha da agenda Google própria em que cada compromisso será criado.
 - Lembretes rápidos como preparar apresentação, subir conteúdo e avaliar a turma.
 - Alertas pop-up criados no próprio evento do Google Calendar.
-- Consulta rápida de horários vagos mês a mês, com navegação entre meses, das 9h às 17h, incluindo fins de semana opcionalmente e considerando compromissos existentes.
+- Consulta rápida de horários vagos por um ou vários meses (até 12), das 9h às 17h, incluindo fins de semana opcionalmente e considerando compromissos existentes.
 - Texto de disponibilidade para copiar e colar no WhatsApp.
 - Relatórios mensais ou por intervalo, com impressão/salvamento em PDF pelo navegador.
 - Layout responsivo para celular e web.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v1.3`) e mês/ano corrente ao lado do nome do app.
+- Identificação da versão (`v1.4`) e mês/ano corrente ao lado do nome do app.
 
 ## Apps Script é uma boa opção?
 
@@ -37,7 +38,7 @@ Abra `Index.html` no navegador. A demonstração usa exemplos e guarda os novos 
 
 ## Limites da consulta de disponibilidade
 
-A busca considera das 9h às 17h e os eventos que ocupam horário nas agendas próprias da conta. Consulte um mês por vez e navegue entre meses pelas setas ou pelo seletor. Marque **Fins de semana** para incluí-los. O texto copiado informa os intervalos sugeridos; não envia mensagens ao WhatsApp. Agendas compartilhadas de outras pessoas não entram na consulta. Confira feriados e exceções antes de confirmar um horário.
+A busca considera das 9h às 17h e os eventos que ocupam horário nas agendas próprias da conta. Selecione os meses inicial e final, em um intervalo de até 12 meses. As setas deslocam o período completo em um mês. Marque **Fins de semana** para incluí-los. O texto copiado informa os intervalos sugeridos; não envia mensagens ao WhatsApp. Agendas compartilhadas de outras pessoas não entram na consulta. Confira feriados e exceções antes de confirmar um horário.
 
 ## Arquivos
 

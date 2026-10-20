@@ -41,12 +41,21 @@ function getEvents(fromDate, toDate) {
 function createAppointment(data) {
   validateAppointment_(data);
   const calendar = findWritableCalendar_(data.calendarId);
-  const start = parseDateTime_(data.date, data.startTime);
-  const end = parseDateTime_(data.date, data.endTime);
-  if (end <= start) throw new Error('O horário final deve ser posterior ao inicial.');
+  const isAllDay = data.allDay === 'on' || data.allDay === true;
+  const start = isAllDay ? parseDate_(data.date) : parseDateTime_(data.date, data.startTime);
+  let end;
+  if (isAllDay) {
+    start.setHours(0, 0, 0, 0);
+    end = new Date(start);
+    end.setDate(end.getDate() + 1);
+  } else {
+    end = parseDateTime_(data.date, data.endTime);
+    if (end <= start) throw new Error('O horário final deve ser posterior ao inicial.');
+  }
   const title = (data.title || '').trim();
   const description = [data.description || '', 'Categoria: ' + data.category, data.reminderLabel ? 'Lembrete: ' + data.reminderLabel : ''].filter(Boolean).join('\n');
-  const event = calendar.createEvent(title, start, end, { description: description, location: data.location || '' });
+  const options = { description: description, location: data.location || '' };
+  const event = isAllDay ? calendar.createAllDayEvent(title, start, options) : calendar.createEvent(title, start, end, options);
   event.setColor(APP.colors[data.category] || CalendarApp.EventColor.BLUE);
   const reminder = Number(data.reminderMinutes || 0);
   if (reminder > 0 && reminder <= 40320) event.addPopupReminder(reminder);
@@ -92,7 +101,8 @@ function validateAppointment_(data) {
   if (!data || !String(data.title || '').trim()) throw new Error('Informe o título do compromisso.');
   if (APP.categories.indexOf(data.category) < 0) throw new Error('Escolha uma categoria válida.');
   if (data.calendarId && typeof data.calendarId !== 'string') throw new Error('Agenda inválida.');
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(data.date || '') || !/^\d{2}:\d{2}$/.test(data.startTime || '') || !/^\d{2}:\d{2}$/.test(data.endTime || '')) throw new Error('Informe data e horários válidos.');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(data.date || '')) throw new Error('Informe uma data válida.');
+  if (data.allDay !== 'on' && data.allDay !== true && (!/^\d{2}:\d{2}$/.test(data.startTime || '') || !/^\d{2}:\d{2}$/.test(data.endTime || ''))) throw new Error('Informe horários válidos.');
 }
 
 function parseDate_(value) {
