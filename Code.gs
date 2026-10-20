@@ -15,14 +15,18 @@ function doGet() {
 }
 
 function getInitialData() {
-  const calendar = CalendarApp.getDefaultCalendar();
+  const calendars = getWritableCalendars_();
   const now = new Date();
   const start = new Date(now.getFullYear(), now.getMonth(), 1);
   const end = new Date(now.getFullYear(), now.getMonth() + 2, 1);
+  const calendarList = calendars.map(function (calendar) { return { id: calendar.getId(), name: calendar.getName() }; });
+  const calendarId = CalendarApp.getDefaultCalendar().getId();
   return {
-    calendarName: calendar.getName(),
+    calendarName: CalendarApp.getDefaultCalendar().getName(),
+    defaultCalendarId: calendarId,
+    calendars: calendarList,
     calendarUrl: 'https://calendar.google.com/calendar/u/0/r/week',
-    events: readEvents_(calendar, start, end),
+    events: readEvents_(calendars, start, end),
     timezone: Session.getScriptTimeZone()
   };
 }
@@ -31,12 +35,12 @@ function getEvents(fromDate, toDate) {
   const start = parseDate_(fromDate);
   const end = parseDate_(toDate);
   if (end <= start) throw new Error('O período final deve ser posterior ao inicial.');
-  return readEvents_(CalendarApp.getDefaultCalendar(), start, end);
+  return readEvents_(getWritableCalendars_(), start, end);
 }
 
 function createAppointment(data) {
   validateAppointment_(data);
-  const calendar = CalendarApp.getDefaultCalendar();
+  const calendar = findWritableCalendar_(data.calendarId);
   const start = parseDateTime_(data.date, data.startTime);
   const end = parseDateTime_(data.date, data.endTime);
   if (end <= start) throw new Error('O horário final deve ser posterior ao inicial.');
@@ -55,21 +59,39 @@ function createQuickReminder(data) {
   return createAppointment(data);
 }
 
-function readEvents_(calendar, start, end) {
-  return calendar.getEvents(start, end).map(function (event) {
+function readEvents_(calendars, start, end) {
+  return calendars.reduce(function (all, calendar) {
+    return all.concat(calendar.getEvents(start, end).map(function (event) {
     const description = event.getDescription() || '';
     const categoryMatch = description.match(/Categoria: (Pessoal|Universitário|Profissional)/);
     return {
       id: event.getId(), title: event.getTitle(), start: event.getStartTime().toISOString(), end: event.getEndTime().toISOString(),
       allDay: event.isAllDayEvent(), location: event.getLocation(), description: description,
-      category: categoryMatch ? categoryMatch[1] : 'Profissional'
+      category: categoryMatch ? categoryMatch[1] : 'Profissional', calendarId: calendar.getId(), calendarName: calendar.getName()
     };
-  });
+    }));
+  }, []).sort(function (a, b) { return new Date(a.start) - new Date(b.start); });
+}
+
+function getWritableCalendars_() {
+  const calendars = CalendarApp.getAllOwnedCalendars();
+  const defaultCalendar = CalendarApp.getDefaultCalendar();
+  if (!calendars.some(function (calendar) { return calendar.getId() === defaultCalendar.getId(); })) calendars.unshift(defaultCalendar);
+  return calendars;
+}
+
+function findWritableCalendar_(calendarId) {
+  const calendars = getWritableCalendars_();
+  if (!calendarId) return CalendarApp.getDefaultCalendar();
+  const calendar = calendars.find(function (item) { return item.getId() === calendarId; });
+  if (!calendar) throw new Error('A agenda selecionada não está disponível para edição. Atualize a página e escolha uma agenda sua.');
+  return calendar;
 }
 
 function validateAppointment_(data) {
   if (!data || !String(data.title || '').trim()) throw new Error('Informe o título do compromisso.');
   if (APP.categories.indexOf(data.category) < 0) throw new Error('Escolha uma categoria válida.');
+  if (data.calendarId && typeof data.calendarId !== 'string') throw new Error('Agenda inválida.');
   if (!/^\d{4}-\d{2}-\d{2}$/.test(data.date || '') || !/^\d{2}:\d{2}$/.test(data.startTime || '') || !/^\d{2}:\d{2}$/.test(data.endTime || '')) throw new Error('Informe data e horários válidos.');
 }
 
