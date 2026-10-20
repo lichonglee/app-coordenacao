@@ -10,12 +10,13 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Opção de criar compromissos de dia inteiro.
 - Escolha da agenda Google própria em que cada compromisso será criado.
 - Lembretes rápidos como preparar apresentação, subir conteúdo e avaliar a turma.
+- Os lembretes prontos ficam dentro do cartão Novo compromisso e preenchem o formulário ao toque.
 - Alertas pop-up criados no próprio evento do Google Calendar.
 - Consulta rápida de horários vagos por um ou vários meses (até 12), das 9h às 17h ou em dias inteiros. Quando fins de semana estão marcados, a consulta mostra somente blocos de sexta a domingo como dia inteiro; qualquer compromisso nesses dias marca o bloco em vermelho com observações.
 - Texto para WhatsApp com os fins de semana livres agrupados por mês, sem horários; fins de semana ocupados podem ser selecionados individualmente para inclusão no mesmo formato.
 - Cartão Conciliação identifica sobreposições de horários em agendas distintas, com nome e cor de cada agenda.
 - O cartão Conciliação permite filtrar quais agendas entram na verificação de conflitos.
-- Relatórios mensais ou por intervalo, com impressão/salvamento em PDF pelo navegador.
+- Relatórios mensais ou por intervalo, com impressão/salvamento em PDF pelo navegador. A impressão contém apenas o relatório, com cabeçalho, período, agendas selecionadas e data de geração.
 - Agenda próxima e relatórios ficam no mesmo cartão; é possível filtrar ambos por uma ou várias agendas.
 - Layout responsivo para celular e web.
 - Tema escuro e controles para ocultar ou restaurar cartões; os cartões restantes se reorganizam automaticamente.
@@ -23,7 +24,7 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Na Consulta rápida, é possível selecionar uma ou várias agendas e combinar seus conflitos.
 - Agenda próxima aparece primeiro e a grade ajusta a largura quando uma coluna fica sem cartões visíveis.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v3.0`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+- Identificação da versão (`v3.1`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Apps Script é uma boa opção?
 
