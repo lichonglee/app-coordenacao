@@ -28,6 +28,10 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Demonstração local sem conexão à conta Google.
 - Identificação da versão (`v3.6`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
+## Manual do usuário
+
+- [Manual ilustrado em PDF](manual/Manual_Agenda_Clara.pdf), com exemplos fictícios e telas sem dados da agenda real.
+
 ## Apps Script é uma boa opção?
 
 Sim, para uma aplicação individual como esta. O Apps Script hospeda a interface web e, depois da autorização do titular da conta, acessa o calendário padrão sem manter uma senha ou token em um servidor de terceiros. O projeto pode ser usado sem custo em contas Google comuns, respeitando as cotas aplicáveis do Google. Alertas configurados aqui são lembretes pop-up do próprio Calendar; a entrega de notificações no celular depende das configurações do Google Calendar no aparelho.
