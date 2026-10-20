@@ -17,12 +17,12 @@
 <body>
   <div class="shell">
     <aside class="sidebar">
-      <div class="brand"><span class="brand-mark">◷</span><span>agenda clara <small id="sideVersion" style="font-size:10px;font-weight:600;letter-spacing:0;color:#839087">v2.3 · 20/10/2026</small></span></div>
+      <div class="brand"><span class="brand-mark">◷</span><span>agenda clara <small id="sideVersion" style="font-size:10px;font-weight:600;letter-spacing:0;color:#839087">v2.4 · 20/10/2026</small></span></div>
       <nav class="nav"><button class="active" data-target="home">◉ &nbsp; Visão geral</button><button data-target="new">＋ &nbsp; Novo compromisso</button><button data-target="availability">◷ &nbsp; Disponibilidade</button><button data-target="reports">▤ &nbsp; Relatórios</button></nav>
       <div class="side-note"><strong>Seu tempo, mais leve.</strong>Uma agenda só, com espaço para o que importa.</div>
     </aside>
     <main class="main" id="home">
-      <header class="top"><div><div class="eyebrow"><span>AGENDA CLARA</span> · <span id="appVersion">v2.3 · 20/10/2026</span></div><h1>Bom dia, Li <span aria-hidden="true">☀</span></h1></div><div class="top-right"><span class="demo" id="modeBadge">● Demonstração</span><a class="calendar-link" id="calendarLink" href="https://calendar.google.com/calendar" target="_blank" rel="noopener"><span>↗</span> Abrir Google Calendar</a><div class="header-actions"><button type="button" class="quiet theme-btn" id="themeToggle" aria-label="Ativar tema escuro" title="Tema escuro"><span>◐</span> Tema</button><button type="button" class="quiet manage-btn" id="manageCards" aria-expanded="false" aria-controls="cardManager"><span>▦</span> Cartões</button></div><div class="avatar">L</div></div></header>
+      <header class="top"><div><div class="eyebrow"><span>AGENDA CLARA</span> · <span id="appVersion">v2.4 · 20/10/2026</span></div><h1>Bom dia, Li <span aria-hidden="true">☀</span></h1></div><div class="top-right"><span class="demo" id="modeBadge">● Demonstração</span><a class="calendar-link" id="calendarLink" href="https://calendar.google.com/calendar" target="_blank" rel="noopener"><span>↗</span> Abrir Google Calendar</a><div class="header-actions"><button type="button" class="quiet theme-btn" id="themeToggle" aria-label="Ativar tema escuro" title="Tema escuro"><span>◐</span> Tema</button><button type="button" class="quiet manage-btn" id="manageCards" aria-expanded="false" aria-controls="cardManager"><span>▦</span> Cartões</button></div><div class="avatar">L</div></div></header>
       <div class="card-manager" id="cardManager" hidden><strong>Cartões visíveis</strong><div id="cardOptions"></div></div>
       <div class="grid" id="homeGrid">
         <div class="card-column" id="mainCards">
@@ -82,7 +82,7 @@
     function selectedAvailabilityCalendars(){return [...$('availabilityCalendars').querySelectorAll(':checked')].map(x=>x.value)}
     $('selectAllAvailability').addEventListener('click',()=>{const ids=calendars.map(c=>c.id);localStorage.setItem('agendaClaraAvailabilityCalendars',JSON.stringify(ids));renderAvailabilityCalendars();$('slotList').innerHTML='';shareText=''});
     function setCalendars(calendarList,preferredId){calendars=calendarList;const select=$('calendarId');select.innerHTML='';calendars.forEach((calendar,index)=>{const option=document.createElement('option');option.value=calendar.id;option.textContent=calendar.name;option.selected=calendar.id===preferredId||(!preferredId&&index===0);select.appendChild(option)});renderAvailabilityCalendars()}
-    function load(){ const now=new Date();const versionLabel='v2.3 · '+new Intl.DateTimeFormat('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'}).format(now);$('appVersion').textContent=versionLabel;$('sideVersion').textContent=versionLabel;document.title='Agenda Clara · '+versionLabel;const t=localToday();$('date').value=t;$('availMonthFrom').value=t.slice(0,7);$('availMonthTo').value=t.slice(0,7);$('monthInput').value=t.slice(0,7);$('reportFrom').value=t.slice(0,8)+'01';$('reportTo').value=t;
+    function load(){ const now=new Date();const versionLabel='v2.4 · '+new Intl.DateTimeFormat('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'}).format(now);$('appVersion').textContent=versionLabel;$('sideVersion').textContent=versionLabel;document.title='Agenda Clara · '+versionLabel;const t=localToday();$('date').value=t;$('availMonthFrom').value=t.slice(0,7);$('availMonthTo').value=t.slice(0,7);$('monthInput').value=t.slice(0,7);$('reportFrom').value=t.slice(0,8)+'01';$('reportTo').value=t;
       if(isAppsScript){$('modeBadge').textContent='● Conectando ao Google Calendar…';$('modeBadge').style.cssText='color:#235b45;background:#e8f1eb;border-color:#cfe1d4';$('eventList').innerHTML='<div class="empty">Carregando sua agenda Google…</div>';callServer('getInitialData').then(data=>{events=data.events||[];setCalendars(data.calendars||[],data.defaultCalendarId);$('calendarLink').href=data.calendarUrl||'https://calendar.google.com/calendar';$('agendaSub').textContent='Agenda: '+data.calendarName;$('modeBadge').textContent='● Google Calendar conectado';renderEvents()}).catch(err=>{$('modeBadge').textContent='● Falha na conexão';$('modeBadge').style.cssText='color:#a33a35;background:#fff1f0;border-color:#e7aaa7';$('eventList').innerHTML='<div class="empty">Não foi possível acessar seu Google Calendar. Recarregue e conclua a autorização da conta.</div>';toast('Não foi possível ler o Calendar: '+err.message)})}
       else{const demoCalendars=[{id:'demo-default',name:'Minha agenda'},{id:'demo-personal',name:'Pessoal'},{id:'demo-university',name:'Universidade'},{id:'demo-work',name:'Trabalho'}];let saved=[];try{saved=JSON.parse(localStorage.getItem('agendaClaraEvents')||'[]').map(e=>({...e,start:new Date(e.start),end:new Date(e.end)}))}catch{}setCalendars(demoCalendars,'demo-default');events=[...demoEvents(),...saved];renderEvents()}}
     function syncAllDayFields(){$('timeFields').style.display=$('allDay').checked?'none':'grid';$('startTime').required=!$('allDay').checked;$('endTime').required=!$('allDay').checked}
@@ -114,19 +114,19 @@
       const from=localDate(first),eventEnd=new Date(afterMonth);eventEnd.setDate(eventEnd.getDate()+3);const to=localDate(eventEnd),days=Math.round((afterMonth-first)/86400000);
       if(isAppsScript){try{events=await callServer('getEvents',[from,to])}catch(e){toast('Falha ao consultar a agenda: '+e.message);return}}renderReconciliation();
       const today=new Date(localToday()+'T00:00:00'),available=[];
-      for(let i=0;i<days;){
-        const day=new Date(first);day.setDate(first.getDate()+i);if(day<today){i++;continue}
-        const weekday=day.getDay(),weekendDay=weekday===5||weekday===6||weekday===0;
-        if(includeWeekends&&weekendDay){
-          const weekendStart=new Date(day),weekendEnd=new Date(day);weekendEnd.setDate(weekendEnd.getDate()+(weekday===5?3:weekday===6?2:1));
+      for(let i=0;i<days;i++){
+        const day=new Date(first);day.setDate(first.getDate()+i);if(day<today)continue;
+        const weekday=day.getDay();
+        if(includeWeekends){
+          if(weekday!==5)continue;
+          const weekendStart=new Date(day),weekendEnd=new Date(day);weekendEnd.setDate(weekendEnd.getDate()+3);
           const busyEvents=eventsInRange(weekendStart,weekendEnd);
           available.push({day,weekend:true,weekendStart,weekendEnd:new Date(weekendEnd.getTime()-86400000),allDay:true,slots:busyEvents.length?[]:[{start:weekendStart,end:weekendEnd}],busyEvents:busyEvents.length?busyEvents:null});
-          i=Math.max(i+1,Math.round((weekendEnd-first)/86400000));continue;
+          continue;
         }
-        if(includeWeekends||weekday===0||weekday===6){i++;continue}
+        if(weekday===0||weekday===6)continue;
         const wholeDay=allDayAvailability,dayKey=localDate(day),slots=getSlots(dayKey,duration,wholeDay);
         if(slots.length)available.push({day,slots,allDay:wholeDay});
-        i++;
       }
       $('slotList').innerHTML=available.length?available.map(x=>`<div class="slot ${x.busyEvents?'busy-day':''}"><span>${availabilityDateLabel(x)}</span><strong>${x.busyEvents?'Ocupado':x.weekend?'Fim de semana livre':x.allDay?'Dia todo livre':x.slots.map(s=>s.start.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})+'–'+s.end.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})).join(', ')}</strong>${x.busyEvents?`<small class="slot-note">${availabilityBusyNote(x.busyEvents)}</small>`:''}</div>`).join(''):'<div class="sub">Nenhum horário livre futuro encontrado nesse período. Tente outras datas ou inclua fins de semana.</div>';
       const shareItems=available.filter(x=>!x.busyEvents);

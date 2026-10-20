@@ -19,7 +19,7 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Na Consulta rápida, é possível selecionar uma ou várias agendas e combinar seus conflitos.
 - Agenda próxima aparece primeiro e a grade ajusta a largura quando uma coluna fica sem cartões visíveis.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v2.3`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+- Identificação da versão (`v2.4`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Apps Script é uma boa opção?
 
