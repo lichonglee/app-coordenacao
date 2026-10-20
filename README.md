@@ -9,12 +9,12 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Escolha da agenda Google própria em que cada compromisso será criado.
 - Lembretes rápidos como preparar apresentação, subir conteúdo e avaliar a turma.
 - Alertas pop-up criados no próprio evento do Google Calendar.
-- Consulta rápida de horários vagos por um ou vários meses (até 12), das 9h às 17h ou em dias inteiros. Quando fins de semana estão marcados, sexta a domingo formam um único bloco de dia inteiro; qualquer compromisso nesses dias marca o bloco em vermelho com observações.
+- Consulta rápida de horários vagos por um ou vários meses (até 12), das 9h às 17h ou em dias inteiros. Quando fins de semana estão marcados, a consulta mostra somente blocos de sexta a domingo como dia inteiro; qualquer compromisso nesses dias marca o bloco em vermelho com observações.
 - Texto de disponibilidade para copiar e colar no WhatsApp.
 - Relatórios mensais ou por intervalo, com impressão/salvamento em PDF pelo navegador.
 - Layout responsivo para celular e web.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v1.8`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+- Identificação da versão (`v1.9`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Apps Script é uma boa opção?
 
