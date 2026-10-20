@@ -18,7 +18,7 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Texto para WhatsApp com os fins de semana livres agrupados por mês, sem horários; fins de semana ocupados podem ser selecionados individualmente para inclusão no mesmo formato.
 - Cartão Conciliação identifica sobreposições de horários em agendas distintas, com nome e cor de cada agenda.
 - O cartão Conciliação permite filtrar quais agendas entram na verificação de conflitos.
-- Relatórios mensais ou por intervalo, com mini calendários mensais, dias marcados na cor da agenda e compromissos listados abaixo de cada calendário; impressão/PDF contém apenas o relatório com cabeçalho, período, agendas selecionadas e data de geração.
+- Relatórios mensais ou por intervalo, com mini calendários mensais, dias marcados na cor da agenda e compromissos listados abaixo de cada calendário; impressão/PDF começa com uma página de mini calendários e continua com os detalhes mensais em duas colunas, mantendo calendário e compromissos juntos; inclui cabeçalho, período, agendas selecionadas e data de geração.
 - Agenda próxima e relatórios ficam no mesmo cartão; é possível filtrar ambos por uma ou várias agendas.
 - Layout responsivo para celular e web.
 - Tema escuro e controles para ocultar ou restaurar cartões; os cartões restantes se reorganizam automaticamente.
@@ -26,7 +26,7 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Na Consulta rápida, é possível selecionar uma ou várias agendas e combinar seus conflitos.
 - Agenda próxima aparece primeiro e a grade ajusta a largura quando uma coluna fica sem cartões visíveis.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v3.5`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+- Identificação da versão (`v3.6`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Apps Script é uma boa opção?
 
