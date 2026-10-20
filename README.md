@@ -8,12 +8,12 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Escolha da agenda Google própria em que cada compromisso será criado.
 - Lembretes rápidos como preparar apresentação, subir conteúdo e avaliar a turma.
 - Alertas pop-up criados no próprio evento do Google Calendar.
-- Consulta rápida de horários vagos em um dia ou intervalo de até 31 dias, das 9h às 17h, incluindo fins de semana opcionalmente e considerando compromissos existentes.
+- Consulta rápida de horários vagos mês a mês, com navegação entre meses, das 9h às 17h, incluindo fins de semana opcionalmente e considerando compromissos existentes.
 - Texto de disponibilidade para copiar e colar no WhatsApp.
 - Relatórios mensais ou por intervalo, com impressão/salvamento em PDF pelo navegador.
 - Layout responsivo para celular e web.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v1.2`) e mês/ano corrente ao lado do nome do app.
+- Identificação da versão (`v1.3`) e mês/ano corrente ao lado do nome do app.
 
 ## Apps Script é uma boa opção?
 
@@ -37,7 +37,7 @@ Abra `Index.html` no navegador. A demonstração usa exemplos e guarda os novos 
 
 ## Limites da consulta de disponibilidade
 
-A busca considera das 9h às 17h e os eventos que ocupam horário nas agendas próprias da conta. Escolha uma data inicial e final (até 31 dias) e marque **Fins de semana** para incluí-los. O texto copiado informa os intervalos sugeridos; não envia mensagens ao WhatsApp. Agendas compartilhadas de outras pessoas não entram na consulta. Confira feriados e exceções antes de confirmar um horário.
+A busca considera das 9h às 17h e os eventos que ocupam horário nas agendas próprias da conta. Consulte um mês por vez e navegue entre meses pelas setas ou pelo seletor. Marque **Fins de semana** para incluí-los. O texto copiado informa os intervalos sugeridos; não envia mensagens ao WhatsApp. Agendas compartilhadas de outras pessoas não entram na consulta. Confira feriados e exceções antes de confirmar um horário.
 
 ## Arquivos
 
