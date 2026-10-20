@@ -14,7 +14,7 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Relatórios mensais ou por intervalo, com impressão/salvamento em PDF pelo navegador.
 - Layout responsivo para celular e web.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v1.5`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+- Identificação da versão (`v1.7`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Apps Script é uma boa opção?
 

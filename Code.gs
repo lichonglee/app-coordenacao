@@ -9,7 +9,9 @@ const APP = {
 };
 
 function doGet() {
-  return HtmlService.createHtmlOutputFromFile('Index')
+  const template = HtmlService.createTemplateFromFile('Index');
+  template.runtime = 'apps-script';
+  return template.evaluate()
     .setTitle(APP.title)
     .addMetaTag('viewport', 'width=device-width, initial-scale=1');
 }
