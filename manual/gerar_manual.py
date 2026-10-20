@@ -84,7 +84,7 @@ def browser_frame(p, x, y, w, h, active="Visão geral"):
         if label==active: rect(p,sx+5,yy-12,sw-10,20,SOFT,SOFT,5,0.3)
         text(p,sx+11,yy,label,6.2,GREEN if label==active else MUTED,label==active)
     mx=sx+sw+13; mw=x+w-mx-10
-    text(p,mx,sy+17,"AGENDA CLARA  ·  v3.6",6.1,MUTED,True)
+    text(p,mx,sy+17,"AGENDA CLARA  ·  v3.7",6.1,MUTED,True)
     text(p,mx,sy+35,"Seu tempo, mais leve.",12,INK,True)
     button(p,x+w-93,sy+8,78,"Google Calendar",True)
     return mx,sy+48,mw,sh-55
@@ -300,7 +300,7 @@ note(p,285,473,272,82,"COMPARTILHAMENTO","A cópia para WhatsApp fica no clipboa
 text(p,38,643,"LEMBRETES RÁPIDOS",8,GREEN,True)
 note(p,38,655,250,99,"PREPARAR APRESENTAÇÃO","Toque no lembrete pronto, confirme o título e a agenda, escolha data e horário e salve.",PURPLE)
 note(p,300,655,257,99,"SUBIR CONTEÚDO / AVALIAR","Os lembretes preenchem o título. Você pode editar detalhes antes de adicionar ao Calendar.",GREEN)
-para(p,(38,773,557,799),"Versão deste manual: Agenda Clara v3.6 · 20/10/2026",8,MUTED)
+para(p,(38,773,557,799),"Versão deste manual: Agenda Clara v3.7 · 20/10/2026",8,MUTED)
 
 doc.set_metadata({"title":"Manual do usuário — Agenda Clara","author":"Agenda Clara","subject":"Guia de uso com exemplos fictícios e telas ilustrativas"})
 doc.save(OUT, garbage=4, deflate=True)
