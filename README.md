@@ -13,8 +13,12 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Texto de disponibilidade para copiar e colar no WhatsApp.
 - Relatórios mensais ou por intervalo, com impressão/salvamento em PDF pelo navegador.
 - Layout responsivo para celular e web.
-- Tema escuro e controles para ocultar ou restaurar cartões; os cartões restantes se reorganizam automaticamente.\n- A consulta de disponibilidade identifica cada conflito com o nome da agenda e uma cor própria.\n- Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v2.0`) e data atual (DD/MM/AAAA) ao lado do nome do app.\n- Tema claro/escuro persistente, cartões ocultáveis e restauráveis, e grade que se reajusta ao espaço disponível.\n- Agenda próxima aparece primeiro; observações de conflitos mostram o nome e a cor de cada agenda do Google Calendar.
+- Tema escuro e controles para ocultar ou restaurar cartões; os cartões restantes se reorganizam automaticamente.
+- A consulta de disponibilidade identifica cada conflito com o nome da agenda e uma cor própria.
+- Na Consulta rápida, é possível selecionar uma ou várias agendas e combinar seus conflitos.
+- Agenda próxima aparece primeiro e a grade ajusta a largura quando uma coluna fica sem cartões visíveis.
+- Demonstração local sem conexão à conta Google.
+- Identificação da versão (`v2.1`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Apps Script é uma boa opção?
 
@@ -45,5 +49,6 @@ A busca considera das 9h às 17h ou o dia inteiro, conforme a opção marcada, e
 - `Code.gs` — conexão segura com CalendarApp e operações de agenda.
 - `Index.html` — interface responsiva e demonstração local.
 - `appsscript.json` — fuso horário e permissões solicitadas.
+
 
 
