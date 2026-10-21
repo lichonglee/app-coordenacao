@@ -14,6 +14,8 @@ O valor da coluna G foi tratado como pagamento por sessão, de acordo com os reg
 - Conciliação de conflitos por professor. Quando não há horários, sessões na mesma data geram alerta para revisão.
 - Financeiro de valores cadastrados, status pago/pendente e exportação CSV.
 - Exportação de agenda completa, de uma turma, módulo ou sessão em formato ICS para importar no Google Calendar.
+- Guia de avaliação de professores: leitura de planilhas XLS/XLSX, médias gerais e por critério, comentários abertos e mini relatório exportável. A avaliação de exemplo fornecida está carregada.
+- Visão geral com média das notas cadastradas por curso.
 - Cartões para lembrete individual e espelho de todos os módulos do professor. Revise e envie via WhatsApp ou e-mail.
 - Atualização/importação por CSV UTF-8 e backup JSON no navegador.
 - Importação direta para Calendar com Apps Script, após autorização.
