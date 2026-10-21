@@ -1,10 +1,10 @@
-<script>
+<script type="text/plain" id="app-source">
   const GAS=document.documentElement.dataset.runtime==='apps-script';
   const $=id=>document.getElementById(id); const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const money=n=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(n)||0);
   const dateFmt=s=>s?new Date(s+'T12:00:00').toLocaleDateString('pt-BR'):'Sem data';
   const uid=()=>Math.random().toString(36).slice(2,10);
-  const SEED=<?= seed ?>; let records=[],calendarList=[],editingId='',msgMode='reminder';
+  const SEED={}; let records=[],calendarList=[],editingId='',msgMode='reminder';
   const storageGet=k=>{try{return window.localStorage.getItem(k)}catch(e){return null}}; const storageSet=(k,v)=>{try{window.localStorage.setItem(k,v)}catch(e){}}; const storageRemove=k=>{try{window.localStorage.removeItem(k)}catch(e){}};
   window.addEventListener('error',e=>{const box=document.getElementById('status');if(box){box.textContent='Erro ao iniciar o app: '+e.message;box.classList.add('show')}}); window.addEventListener('unhandledrejection',e=>{const box=document.getElementById('status');if(box){box.textContent='Erro ao carregar dados: '+(e.reason?.message||e.reason);box.classList.add('show')}});
   async function init(){document.documentElement.dataset.theme=storageGet(THEME)||'light';setThemeButton();await loadRecords();bind();render();if(GAS){google.script.run.withSuccessHandler(d=>{calendarList=d.calendars||[];$('calendarSelect').innerHTML=calendarList.map(x=>`<option value="${esc(x.id)}">${esc(x.name)}</option>`).join('');}).withFailureHandler(e=>toast('Falha ao carregar agendas Google: '+e.message)).getInitialData();}}
