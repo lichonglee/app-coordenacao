@@ -26,7 +26,7 @@ O formulário da sessão permite escolher **Pago**, **Realizado**, **Previsto** 
 
 ![Tela esquemática do histórico de avaliações, com opção de desconsiderar](telas/avaliacoes.svg)
 
-Selecione professor e curso para filtrar. **Desconsiderar e recalcular média** mantém a avaliação no histórico, marca o cartão em vermelho e exclui sua nota da média. **Incluir na média** desfaz a ação. **Excluir** remove o registro permanentemente.
+Selecione professor e curso para filtrar. **Desconsiderar apenas na média** mantém a avaliação, a agenda e os cadastros intactos; só tira aquela nota do cálculo. O histórico marca o item em vermelho. **Incluir novamente na média** desfaz a ação. A exclusão permanente é um comando separado.
 
 ## Cadastros e dados
 
