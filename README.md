@@ -10,7 +10,7 @@ O valor da coluna G foi tratado como pagamento por sessão, de acordo com os reg
 
 ## Funcionalidades
 
-- Criar, atualizar, remover e filtrar sessões por turma, professor e período; exportar a agenda filtrada em PDF A4 de uma página com cabeçalho inspirado no cronograma Word e agrupamento de até três dias consecutivos por módulo, validando viradas de mês e ano.
+- Criar, atualizar, remover e filtrar sessões por turma, professor e período; exportar a agenda filtrada em PDF A4 de uma página com cabeçalho inspirado no cronograma Word e agrupamento de até três dias consecutivos por módulo, aceitando datas ISO e DD/MM/AAAA e validando viradas de mês e ano.
 - Conciliação de conflitos por professor. Quando não há horários, sessões na mesma data geram alerta para revisão.
 - Financeiro de valores cadastrados, status, data “Receber NF” e exportação com seleção de colunas para Excel ou PDF.
 - Envio de módulos selecionados individualmente para uma agenda Google conectada, como evento de dia inteiro, com título turma - módulo - professor; valida sábado/domingo. Exportação ICS continua disponível.
