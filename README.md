@@ -25,11 +25,13 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Agenda próxima e relatórios ficam no mesmo cartão; é possível filtrar ambos por uma ou várias agendas.
 - Layout responsivo para celular e web.
 - Tema escuro e controles para ocultar ou restaurar cartões; os cartões restantes se reorganizam automaticamente.
+- O controle Cartões visíveis inclui o Panorama da agenda; é possível ocultar e restaurar o painel sem perder a configuração dos outros cartões.
+- Escolha uma cor própria para cada agenda no seletor do Panorama. A cor aparece nos gráficos, eventos e demais indicadores de agenda.
 - A consulta de disponibilidade identifica cada conflito com o nome da agenda e uma cor própria.
 - Na Consulta rápida, é possível selecionar uma ou várias agendas e combinar seus conflitos.
 - Agenda próxima aparece primeiro e a grade ajusta a largura quando uma coluna fica sem cartões visíveis.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v3.13`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+- Identificação da versão (`v3.14`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Manual do usuário
 
