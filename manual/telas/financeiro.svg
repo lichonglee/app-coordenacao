@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380"><rect width="960" height="380" rx="16" fill="#f5f4f0"/><rect width="205" height="380" rx="16" fill="#fff"/>
+<text x="25" y="50" font-family="Arial" font-size="21" font-weight="bold" fill="#734d32">EBPÓS</text><text x="25" y="115" font-family="Arial" font-size="14" fill="#734d32">Visão geral</text><text x="25" y="150" font-family="Arial" font-size="14" fill="#666">Agenda</text><text x="25" y="185" font-family="Arial" font-size="14" fill="#666">Financeiro</text><text x="25" y="220" font-family="Arial" font-size="14" fill="#666">Professores e avaliações</text>
+<text x="240" y="65" font-family="Arial" font-size="27" font-weight="bold" fill="#25231f">
+Painel financeiro
+</text><rect x="240" y="90" width="694" height="250" rx="12" fill="#fff" stroke="#e9e5dd"/><text x="265" y="135" font-family="Arial" font-size="16" font-weight="bold" fill="#25231f">
+Pago · Realizado · Previsto · Pendente
+</text><path d="M260 155h650M260 220h650M260 285h650" stroke="#e9e5dd"/>
+<text x="265" y="195" font-family="Arial" font-size="14" fill="#555">
+ESC006 · Projeto de Fundações · R$ 1.200 · Previsto
+</text><text x="265" y="260" font-family="Arial" font-size="14" fill="#555">
+EST006 · Estruturas Metálicas · R$ 900 · Pendente
+</text><text x="265" y="320" font-family="Arial" font-size="12" fill="#734d32">EBPÓS · Manual ilustrado</text></svg>
