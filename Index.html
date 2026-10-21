@@ -55,7 +55,7 @@
   const money=n=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(n)||0);
   const dateFmt=s=>s?new Date(s+'T12:00:00').toLocaleDateString('pt-BR'):'Sem data';
   const uid=()=>Math.random().toString(36).slice(2,10);
-  const SEED=JSON.parse('<?= seed ?>'); const STORE='ebposCoordModules.v1',THEME='ebposCoordTheme'; let records=[],calendarList=[],editingId='',msgMode='reminder';
+  const SEED=JSON.parse('<?!= seed ?>'); const STORE='ebposCoordModules.v1',THEME='ebposCoordTheme'; let records=[],calendarList=[],editingId='',msgMode='reminder';
   async function init(){document.documentElement.dataset.theme=localStorage.getItem(THEME)||'light';setThemeButton();await loadRecords();bind();render();if(GAS){google.script.run.withSuccessHandler(d=>{calendarList=d.calendars||[];$('calendarSelect').innerHTML=calendarList.map(x=>`<option value="${esc(x.id)}">${esc(x.name)}</option>`).join('');}).withFailureHandler(e=>toast('Falha ao carregar agendas Google: '+e.message)).getInitialData();}}
   async function loadRecords(){let data=localStorage.getItem(STORE);if(data){try{records=JSON.parse(data);return}catch{}}records=SEED.records.map((x,i)=>normalize(x,i));save()}
   function normalize(x,i){return {id:String(x.id||('seed'+i)),course:String(x.course||x.turma||''),teacher:String(x.teacher||x.professor||''),module:String(x.module||x.modulo||''),date:String(x.date||x.data||''),startTime:String(x.startTime||x.horario_inicio||''),endTime:String(x.endTime||x.horario_fim||''),hours:Number(x.hours||x.horas||0),fee:Number(x.fee??x.valor??0),grade:x.grade??x.avaliacao??'',status:x.status||'Pendente',location:x.location||'',notes:x.notes||''}}
