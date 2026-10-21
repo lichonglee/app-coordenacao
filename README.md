@@ -12,7 +12,7 @@ O valor da coluna G foi tratado como pagamento por sessão, de acordo com os reg
 
 - Criar, atualizar, remover e filtrar sessões por turma, professor e período.
 - Conciliação de conflitos por professor. Quando não há horários, sessões na mesma data geram alerta para revisão.
-- Financeiro de valores cadastrados, status, campo “Receber NF” e exportação com seleção de colunas para Excel ou PDF.
+- Financeiro de valores cadastrados, status, data “Receber NF” e exportação com seleção de colunas para Excel ou PDF.
 - Envio de módulos selecionados individualmente para uma agenda Google conectada, como evento de dia inteiro, com título turma - módulo - professor; valida sábado/domingo. Exportação ICS continua disponível.
 - Guia de avaliação de professores: leitura de planilhas XLS/XLSX, médias gerais e por critério, comentários abertos e mini relatório exportável. A avaliação de exemplo fornecida está carregada.
 - Visão geral com gráfico das médias por curso, filtro e paletas de cores, além de navegação entre cartões.
