@@ -10,12 +10,12 @@ O valor da coluna G foi tratado como pagamento por sessão, de acordo com os reg
 
 ## Funcionalidades
 
-- Criar, atualizar, remover e filtrar sessões por turma, professor e período.
+- Criar, atualizar, remover e filtrar sessões por turma, professor e período; exportar a agenda filtrada em PDF A4 de uma página com cabeçalho inspirado no cronograma Word.
 - Conciliação de conflitos por professor. Quando não há horários, sessões na mesma data geram alerta para revisão.
 - Financeiro de valores cadastrados, status, data “Receber NF” e exportação com seleção de colunas para Excel ou PDF.
 - Envio de módulos selecionados individualmente para uma agenda Google conectada, como evento de dia inteiro, com título turma - módulo - professor; valida sábado/domingo. Exportação ICS continua disponível.
 - Guia de avaliação de professores: leitura de planilhas XLS/XLSX, médias gerais e por critério, comentários abertos e mini relatório exportável. A avaliação de exemplo fornecida está carregada.
-- Visão geral com gráfico das médias por curso, filtro e paletas de cores, além de navegação entre cartões.
+- Visão geral com gráfico das médias por curso, filtro e paletas em escala escura para clara conforme a ordem de desempenho, além de navegação entre cartões.
 - Arquivamento e restauração de turmas, preservando os registros.
 - Painel individual de professores combina as avaliações da base e pesquisas XLS/XLSX; pesquisas repetidas são identificadas e podem ser removidas.
 - Cartões para lembrete individual e espelho de todos os módulos do professor. Revise e envie via WhatsApp ou e-mail.
