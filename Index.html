@@ -49,6 +49,7 @@
   <div class="field wide"><label for="fNotes">Observações</label><textarea id="fNotes"></textarea></div>
  </div><div class="modal-actions"><button type="button" class="button" id="cancelEdit">Cancelar</button><button type="submit" class="button primary">Salvar sessão</button></div></form></div></div>
 <div class="status" id="status"></div>
+<script>window.onerror=function(message,source,line,column,error){var box=document.getElementById("status");if(box){box.textContent="Erro JavaScript: "+message+" (linha "+line+")";box.classList.add("show")}};</script>
 <script type="application/json" id="seed-data"><?!= seed ?></script>
 <script>
   const GAS=document.documentElement.dataset.runtime==='apps-script';
