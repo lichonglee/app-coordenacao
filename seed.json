@@ -1,0 +1,1092 @@
+{
+  "records": [
+    {
+      "course": "ESC001",
+      "teacher": "Byl Farney",
+      "date": "2023-06-16",
+      "module": "Teoria das Estruturas, Dinâmica das Estruturas e o uso do BIM",
+      "grade": 99.64,
+      "fee": 600
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Henrique",
+      "date": "2023-08-04",
+      "module": "Cálculo e Dimensionamento de Estruturas usuais de Concreto Armado",
+      "grade": 92.93,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Li Chong",
+      "date": "2023-09-01",
+      "module": "Projeto de Estruturas de Concreto Armado por meio de Software BIM",
+      "grade": 98.33,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Rafael",
+      "date": "2023-10-06",
+      "module": "Cálculo e Dimensionamento de Estruturas Metálicas",
+      "grade": 93.59,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Rafael",
+      "date": "2023-11-10",
+      "module": "Projeto de Estruturas Metálicas por meio de Software BIM",
+      "grade": 98.33,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Marcio",
+      "date": "2023-12-08",
+      "module": "Cálculo e Dimensionamento de Estruturas Pré-Fabricados",
+      "grade": 98.59,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Marcel",
+      "date": "2023-02-02",
+      "module": "Projeto de Estruturas Pré-Fabricados por meio de Software BIM",
+      "grade": 96.35,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Marcel",
+      "date": "2024-03-01",
+      "module": "Projeto de Fundações por meio de Software BIM",
+      "grade": 98.92,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Marcio",
+      "date": "2024-04-05",
+      "module": "Cálculo e Dimensionamento de Fundações",
+      "grade": 98.41,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Cris",
+      "date": "2024-05-17",
+      "module": "Projeto Estrutural com Ferramentas de Programação Visual em BIM",
+      "grade": 98.08,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Matusalém",
+      "date": "2024-06-14",
+      "module": "Durabilidade, Proteção e Recuperação de Estruturas",
+      "grade": 98.43,
+      "fee": 1000
+    },
+    {
+      "course": "ESC001",
+      "teacher": "Adonis",
+      "date": "2024-07-12",
+      "module": "Sistemas Estruturais Sustentáveis em BIM",
+      "grade": 99.13,
+      "fee": 1000
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Byl Farney",
+      "date": "2023-09-22",
+      "module": "Teoria das Estruturas, Dinâmica das Estruturas e o uso do BIM",
+      "grade": 98.22,
+      "fee": 600
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Henrique",
+      "date": "2023-11-17",
+      "module": "Cálculo e Dimensionamento de Estruturas usuais de Concreto Armado",
+      "grade": 88.19,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Rafael",
+      "date": "2024-01-19",
+      "module": "Cálculo e Dimensionamento de Estruturas Metálicas",
+      "grade": 98.19,
+      "fee": 1000
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Rafael",
+      "date": "2024-02-16",
+      "module": "Projeto de Estruturas Metálicas por meio de Software BIM",
+      "grade": 95,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Marcio",
+      "date": "2024-03-08",
+      "module": "Cálculo e Dimensionamento de Estruturas Pré-Fabricados",
+      "grade": 97.62,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Li Chong",
+      "date": "2024-03-22",
+      "module": "Projeto de Estruturas de Concreto Armado por meio de Software BIM",
+      "grade": 98.97,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Marcel",
+      "date": "2024-04-12",
+      "module": "Projeto de Estruturas Pré-Fabricados por meio de Software BIM",
+      "grade": 95.71,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Marcio",
+      "date": "2024-05-10",
+      "module": "Cálculo e Dimensionamento de Fundações",
+      "grade": 92.59,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Marcel",
+      "date": "2024-06-07",
+      "module": "Projeto de Fundações por meio de Software BIM",
+      "grade": 94.92,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Ricardo",
+      "date": "2024-08-02",
+      "module": "Projeto Estrutural com Ferramentas de Programação Visual em BIM",
+      "grade": 94.44,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Matusalém",
+      "date": "2024-09-13",
+      "module": "Durabilidade, Proteção e Recuperação de Estruturas",
+      "grade": 95,
+      "fee": 850
+    },
+    {
+      "course": "ESC002",
+      "teacher": "Adonis",
+      "date": "2024-10-18",
+      "module": "Sistemas Estruturais Sustentáveis em BIM",
+      "grade": 96.27,
+      "fee": 850
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Byl Farney",
+      "date": "2024-03-16",
+      "module": "Teoria das Estruturas, Dinâmica das Estruturas e o uso do BIM",
+      "grade": 99.74,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Henrique",
+      "date": "2024-04-19",
+      "module": "Cálculo e Dimensionamento de Estruturas usuais de Concreto Armado",
+      "grade": 91.67,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Li Chong",
+      "date": "2024-05-03",
+      "module": "Projeto de Estruturas de Concreto Armado por meio de Software BIM",
+      "grade": 99.37,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Rafael",
+      "date": "2024-06-07",
+      "module": "Cálculo e Dimensionamento de Estruturas Metálicas",
+      "grade": 85.83,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Rafael",
+      "date": "2024-07-05",
+      "module": "Projeto de Estruturas Metálicas por meio de Software BIM",
+      "grade": 95.17,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Marcio",
+      "date": "2024-08-09",
+      "module": "Cálculo e Dimensionamento de Estruturas Pré-Fabricados",
+      "grade": 93.02,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Marcel",
+      "date": "2024-09-30",
+      "module": "Projeto de Estruturas Pré-Fabricados por meio de Software BIM",
+      "grade": 91.14,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Marcio",
+      "date": "2024-10-04",
+      "module": "Cálculo e Dimensionamento de Fundações",
+      "grade": 91.74,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Marcel",
+      "date": "2024-11-01",
+      "module": "Projeto de Fundações por meio de Software BIM",
+      "grade": 97.08,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Cris",
+      "date": "2024-12-06",
+      "module": "Projeto Estrutural com Ferramentas de Programação Visual em BIM",
+      "grade": 93.19,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Matusalém",
+      "date": "2025-01-10",
+      "module": "Durabilidade, Proteção e Recuperação de Estruturas",
+      "grade": 99.76,
+      "fee": 1000
+    },
+    {
+      "course": "ESC003",
+      "teacher": "Adonis",
+      "date": "2025-02-07",
+      "module": "Sistemas Estruturais Sustentáveis em BIM",
+      "grade": 97.41,
+      "fee": 1000
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Byl Farney",
+      "date": "2024-06-14",
+      "module": "Teoria das Estruturas, Dinâmica das Estruturas e o uso do BIM",
+      "grade": 99.82,
+      "fee": 800
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Henrique",
+      "date": "2024-08-23",
+      "module": "Cálculo e Dimensionamento de Estruturas usuais de Concreto Armado",
+      "grade": 95.99,
+      "fee": 1200
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Rodolfo",
+      "date": "2024-09-27",
+      "module": "Cálculo e Dimensionamento de Estruturas Pré-Fabricados",
+      "grade": 97.01,
+      "fee": 1500
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Li Chong",
+      "date": "2024-10-18",
+      "module": "Projeto de Estruturas de Concreto Armado por meio de Software BIM",
+      "grade": 99.4,
+      "fee": 1500
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Marcel",
+      "date": "2024-11-29",
+      "module": "Projeto de Estruturas Pré-Fabricados por meio de Software BIM",
+      "grade": 82.35,
+      "fee": 1500
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Rodolfo",
+      "date": "2025-01-24",
+      "module": "Cálculo e Dimensionamento de Fundações",
+      "grade": 97.75,
+      "fee": 1500
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Marcel",
+      "date": "2025-02-21",
+      "module": "Projeto de Fundações por meio de Software BIM",
+      "grade": 96.06,
+      "fee": 1200
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Ricardo",
+      "date": "2025-03-21",
+      "module": "Projeto Estrutural com Ferramentas de Programação Visual em BIM",
+      "grade": 97.39,
+      "fee": 1200
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Matusalém",
+      "date": "2025-04-25",
+      "module": "Durabilidade, Proteção e Recuperação de Estruturas",
+      "grade": 91.79,
+      "fee": 1200
+    },
+    {
+      "course": "ESC004",
+      "teacher": "Adonis",
+      "date": "2025-05-23",
+      "module": "Sistemas Estruturais Sustentáveis em BIM",
+      "grade": 93.57,
+      "fee": 1200
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Byl Farney",
+      "date": "2025-01-31",
+      "module": "Teoria das Estruturas, Dinâmica das Estruturas e o uso do BIM",
+      "grade": 99.25,
+      "fee": 800
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Henrique",
+      "date": "2025-03-28",
+      "module": "Cálculo e Dimensionamento de Estruturas usuais de Concreto Armado",
+      "grade": 87.5,
+      "fee": 900
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Li Chong",
+      "date": "2025-04-25",
+      "module": "Projeto de Estruturas de Concreto Armado por meio de Software BIM",
+      "grade": 98.88,
+      "fee": 900
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Thiago Araújo",
+      "date": "2025-05-23",
+      "module": "Cálculo e Dimensionamento de Estruturas usuais de Concreto Protendido",
+      "grade": 95.99,
+      "fee": 1500
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Rodolfo",
+      "date": "2025-06-27",
+      "module": "Cálculo e Dimensionamento de Estruturas Pré-Fabricados",
+      "grade": 96.57,
+      "fee": 1500
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Li Chong",
+      "date": "2025-08-22",
+      "module": "Projeto de Estruturas de Concreto Protendido por meio de Software BIM",
+      "grade": 98.42,
+      "fee": 1500
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Marcel",
+      "date": "2025-09-26",
+      "module": "Projeto de Estruturas Pré-Fabricados por meio de Software BIM",
+      "grade": 94.9,
+      "fee": 1500
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Rodolfo",
+      "date": "2025-10-24",
+      "module": "Cálculo e Dimensionamento de Fundações",
+      "grade": 97.5,
+      "fee": 1500
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Marcel",
+      "date": "2025-11-21",
+      "module": "Projeto de Fundações por meio de Software BIM",
+      "grade": 91.43,
+      "fee": 1500
+    },
+    {
+      "course": "ESC005",
+      "teacher": "Matusalém",
+      "date": "2025-12-12",
+      "module": "Durabilidade, Proteção e Recuperação de Estruturas",
+      "grade": 98.18,
+      "fee": 1500
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Byl Farney",
+      "date": "2026-02-06",
+      "module": "Teoria das Estruturas, Dinâmica das Estruturas e o uso do BIM",
+      "grade": 99.12,
+      "fee": 800
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Li Chong",
+      "date": "2026-04-10",
+      "module": "Projeto de Estruturas de Concreto Armado por meio de Software BIM",
+      "grade": 98.95,
+      "fee": 800
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Murilo Meiron",
+      "date": "2026-05-08",
+      "module": "Cálculo e Dimensionamento de Estruturas usuais de Concreto Armado",
+      "grade": 97.72,
+      "fee": 1500
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Murilo Meiron",
+      "date": "2026-06-12",
+      "module": "Cálculo e Dimensionamento de Estruturas usuais de Concreto Protendido",
+      "grade": 96.86,
+      "fee": 1500
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Li Chong",
+      "date": "2026-07-03",
+      "module": "Projeto de Estruturas de Concreto Protendido por meio de Software BIM",
+      "grade": 98.65,
+      "fee": 1500
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Rodolfo",
+      "date": "2026-08-07",
+      "module": "Cálculo e Dimensionamento de Estruturas Pré-Fabricados",
+      "grade": 98.91,
+      "fee": 1500
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Rodolfo",
+      "date": "2026-09-11",
+      "module": "Projeto de Estruturas Pré-Fabricados por meio de Software BIM",
+      "grade": null,
+      "fee": 1500
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Marcel",
+      "date": "2026-10-02",
+      "module": "Cálculo e Dimensionamento de Fundações",
+      "grade": null,
+      "fee": 1500
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Marcel",
+      "date": "2026-11-06",
+      "module": "Projeto de Fundações por meio de Software BIM",
+      "grade": null,
+      "fee": 1500
+    },
+    {
+      "course": "ESC006",
+      "teacher": "Matusalém",
+      "date": "2026-12-11",
+      "module": "Durabilidade, Proteção e Recuperação de Estruturas",
+      "grade": null,
+      "fee": 1500
+    },
+    {
+      "course": "EST001",
+      "teacher": "Rafael",
+      "date": "2024-03-01",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800",
+      "grade": 94.44,
+      "fee": 800
+    },
+    {
+      "course": "EST001",
+      "teacher": "Rafael",
+      "date": "2024-05-03",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 - Edificações",
+      "grade": 95.51,
+      "fee": 900
+    },
+    {
+      "course": "EST001",
+      "teacher": "Byl Farney",
+      "date": "2024-06-07",
+      "module": "Inspeção e Controle de Qualidade em Estruturas Metálicas",
+      "grade": 98.8,
+      "fee": 1200
+    },
+    {
+      "course": "EST001",
+      "teacher": "Alberto",
+      "date": "2024-07-05",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Galpões",
+      "grade": 94.36,
+      "fee": 1200
+    },
+    {
+      "course": "EST001",
+      "teacher": "Alberto",
+      "date": "2024-08-08",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Edificações",
+      "grade": 86.79,
+      "fee": 1200
+    },
+    {
+      "course": "EST001",
+      "teacher": "Alberto",
+      "date": "2024-09-20",
+      "module": "BIM para Estruturas Metálicas – NBR 14762",
+      "grade": 87.27,
+      "fee": 1200
+    },
+    {
+      "course": "EST001",
+      "teacher": "Rafael",
+      "date": "2024-10-18",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 – Galpões",
+      "grade": 96.92,
+      "fee": 1200
+    },
+    {
+      "course": "EST001",
+      "teacher": "Byl Farney",
+      "date": "2024-11-22",
+      "module": "Manutenção de Estruturas Metálicas",
+      "grade": 98.46,
+      "fee": 1200
+    },
+    {
+      "course": "EST001",
+      "teacher": "Byl Farney",
+      "date": "2025-01-17",
+      "module": "Inovações Tecnológicas em Estruturas Metálicas",
+      "grade": 98.48,
+      "fee": 1200
+    },
+    {
+      "course": "EST001",
+      "teacher": "Li Chong",
+      "date": "2025-02-21",
+      "module": "Análise Avançada e Otimização de Estruturas Metálicas",
+      "grade": 97.5,
+      "fee": 900
+    },
+    {
+      "course": "EST002",
+      "teacher": "Rafael",
+      "date": "2024-09-13",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800",
+      "grade": 96.18,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Rafael",
+      "date": "2024-11-01",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 - Edificações",
+      "grade": 93.72,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Rafael",
+      "date": "2024-12-06",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 – Galpões",
+      "grade": 96,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Alberto",
+      "date": "2025-01-31",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Galpões",
+      "grade": 95.64,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Alberto",
+      "date": "2025-03-07",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Edificações",
+      "grade": 97.78,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Alberto",
+      "date": "2025-04-04",
+      "module": "BIM para Estruturas Metálicas – NBR 14762",
+      "grade": 96.88,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Byl Farney",
+      "date": "2025-05-09",
+      "module": "Inspeção e Controle de Qualidade em Estruturas Metálicas",
+      "grade": 98.04,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Byl Farney",
+      "date": "2025-06-06",
+      "module": "Manutenção de Estruturas Metálicas",
+      "grade": 97.14,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Byl Farney",
+      "date": "2025-07-04",
+      "module": "Inovações Tecnológicas em Estruturas Metálicas",
+      "grade": 99.64,
+      "fee": 800
+    },
+    {
+      "course": "EST002",
+      "teacher": "Li Chong",
+      "date": "2025-08-01",
+      "module": "Análise Avançada e Otimização de Estruturas Metálicas",
+      "grade": 98.93,
+      "fee": 800
+    },
+    {
+      "course": "EST003",
+      "teacher": "Rafael",
+      "date": "2025-03-28",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800",
+      "grade": 96.41,
+      "fee": 800
+    },
+    {
+      "course": "EST003",
+      "teacher": "Rafael",
+      "date": "2025-05-30",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 - Edificações",
+      "grade": 95.43,
+      "fee": 900
+    },
+    {
+      "course": "EST003",
+      "teacher": "Rafael",
+      "date": "2025-06-27",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 – Galpões",
+      "grade": 93.57,
+      "fee": 900
+    },
+    {
+      "course": "EST003",
+      "teacher": "Alberto",
+      "date": "2025-08-22",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Galpões",
+      "grade": 97.71,
+      "fee": 1200
+    },
+    {
+      "course": "EST003",
+      "teacher": "Alberto",
+      "date": "2025-09-19",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Edificações",
+      "grade": 98.48,
+      "fee": 1200
+    },
+    {
+      "course": "EST003",
+      "teacher": "Alberto",
+      "date": "2025-10-17",
+      "module": "BIM para Estruturas Metálicas – NBR 14762",
+      "grade": 94.29,
+      "fee": 1200
+    },
+    {
+      "course": "EST003",
+      "teacher": "Byl Farney",
+      "date": "2025-11-21",
+      "module": "Inspeção e Controle de Qualidade em Estruturas Metálicas",
+      "grade": 97.65,
+      "fee": 1200
+    },
+    {
+      "course": "EST003",
+      "teacher": "Byl Farney",
+      "date": "2025-12-12",
+      "module": "Manutenção de Estruturas Metálicas",
+      "grade": 97.05,
+      "fee": 1200
+    },
+    {
+      "course": "EST003",
+      "teacher": "Byl Farney",
+      "date": "2026-01-16",
+      "module": "Inovações Tecnológicas em Estruturas Metálicas",
+      "grade": 99.12,
+      "fee": 1200
+    },
+    {
+      "course": "EST003",
+      "teacher": "Li Chong",
+      "date": "2026-03-06",
+      "module": "Análise Avançada e Otimização de Estruturas Metálicas",
+      "grade": 97.68,
+      "fee": 1200
+    },
+    {
+      "course": "EST004",
+      "teacher": "Rafael",
+      "date": "2025-09-12",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800",
+      "grade": 99.05,
+      "fee": 800
+    },
+    {
+      "course": "EST004",
+      "teacher": "Rafael",
+      "date": "2025-11-14",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 - Edificações",
+      "grade": 99.2,
+      "fee": 1500
+    },
+    {
+      "course": "EST004",
+      "teacher": "Rafael",
+      "date": "2025-12-12",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 – Galpões",
+      "grade": 98.09,
+      "fee": 1500
+    },
+    {
+      "course": "EST004",
+      "teacher": "Alberto",
+      "date": "2026-01-09",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Galpões",
+      "grade": 95.5,
+      "fee": 1500
+    },
+    {
+      "course": "EST004",
+      "teacher": "Alberto",
+      "date": "2026-02-06",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Edificações",
+      "grade": 94.89,
+      "fee": 1500
+    },
+    {
+      "course": "EST004",
+      "teacher": "Alberto",
+      "date": "2026-03-13",
+      "module": "BIM para Estruturas Metálicas – NBR 14762",
+      "grade": 96.04,
+      "fee": 1500
+    },
+    {
+      "course": "EST004",
+      "teacher": "Byl Farney",
+      "date": "2026-04-17",
+      "module": "Inspeção e Controle de Qualidade em Estruturas Metálicas",
+      "grade": 98.37,
+      "fee": 1500
+    },
+    {
+      "course": "EST004",
+      "teacher": "Byl Farney",
+      "date": "2026-05-15",
+      "module": "Manutenção de Estruturas Metálicas",
+      "grade": 96.95,
+      "fee": 1500
+    },
+    {
+      "course": "EST004",
+      "teacher": "Byl Farney",
+      "date": "2026-06-19",
+      "module": "Inovações Tecnológicas em Estruturas Metálicas",
+      "grade": 98.93,
+      "fee": 1500
+    },
+    {
+      "course": "EST004",
+      "teacher": "Li Chong",
+      "date": "2026-08-07",
+      "module": "Análise Avançada e Otimização de Estruturas Metálicas",
+      "grade": 98.38,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Rafael",
+      "date": "2026-01-23",
+      "module": "BIM para Estruturas Metálicas – NBR 8800",
+      "grade": 98.2,
+      "fee": 800
+    },
+    {
+      "course": "EST005",
+      "teacher": "Rafael",
+      "date": "2026-03-20",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 – Edificações",
+      "grade": 99.34,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Rafael",
+      "date": "2026-04-24",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 – Galpões",
+      "grade": 98.15,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Alberto",
+      "date": "2026-05-29",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Galpões",
+      "grade": 98.74,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Alberto",
+      "date": "2026-06-26",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Edificações",
+      "grade": 98.49,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Alberto",
+      "date": "2026-08-07",
+      "module": "BIM para Estruturas Metálicas – NBR 14762",
+      "grade": 98.75,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Byl Farney",
+      "date": "2026-09-11",
+      "module": "Inspeção e Controle de Qualidade em Estruturas Metálicas",
+      "grade": null,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Byl Farney",
+      "date": "2026-10-02",
+      "module": "Manutenção de Estruturas Metálicas",
+      "grade": null,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Byl Farney",
+      "date": "2026-11-06",
+      "module": "Inovações Tecnológicas em Estruturas Metálicas",
+      "grade": null,
+      "fee": 1200
+    },
+    {
+      "course": "EST005",
+      "teacher": "Li Chong",
+      "date": "2026-12-04",
+      "module": "Análise Avançada e Otimização de Estruturas Metálicas",
+      "grade": null,
+      "fee": 1200
+    },
+    {
+      "course": "EST006",
+      "teacher": "Rafael",
+      "date": "2026-06-19",
+      "module": "BIM para Estruturas Metálicas – NBR 8800",
+      "grade": 99.23,
+      "fee": 800
+    },
+    {
+      "course": "EST006",
+      "teacher": "Hermes",
+      "date": "2026-08-21",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 – Edificações",
+      "grade": 96.99,
+      "fee": 800
+    },
+    {
+      "course": "EST006",
+      "teacher": "Rafael",
+      "date": "2026-09-18",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 8800 – Galpões",
+      "grade": null,
+      "fee": null
+    },
+    {
+      "course": "EST006",
+      "teacher": "Alberto",
+      "date": "2026-10-16",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Galpões",
+      "grade": null,
+      "fee": null
+    },
+    {
+      "course": "EST006",
+      "teacher": "Alberto",
+      "date": "2026-11-13",
+      "module": "Projeto e Cálculo de Estruturas Metálicas pela NBR 14762 – Edificações",
+      "grade": null,
+      "fee": null
+    },
+    {
+      "course": "EST006",
+      "teacher": "Alberto",
+      "date": "2026-12-11",
+      "module": "BIM para Estruturas Metálicas – NBR 14762",
+      "grade": null,
+      "fee": null
+    },
+    {
+      "course": "EST006",
+      "teacher": "Byl Farney",
+      "date": "2027-01-29",
+      "module": "Inspeção e Controle de Qualidade em Estruturas Metálicas",
+      "grade": null,
+      "fee": null
+    },
+    {
+      "course": "EST006",
+      "teacher": "Byl Farney",
+      "date": "2027-02-26",
+      "module": "Manutenção de Estruturas Metálicas",
+      "grade": null,
+      "fee": null
+    },
+    {
+      "course": "EST006",
+      "teacher": "Byl Farney",
+      "date": "2027-03-19",
+      "module": "Inovações Tecnológicas em Estruturas Metálicas",
+      "grade": null,
+      "fee": null
+    },
+    {
+      "course": "EST006",
+      "teacher": "Li Chong",
+      "date": "2027-04-16",
+      "module": "Análise Avançada e Otimização de Estruturas Metálicas",
+      "grade": null,
+      "fee": null
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Rodrigo da Mata",
+      "date": "2025-01-23",
+      "module": "Execução e Planejamento de Obras de OAE",
+      "grade": 99.47,
+      "fee": 800
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Byl Farney",
+      "date": "2025-03-28",
+      "module": "Projeto e Dimensionamento de Pontes em Concreto Armado de Duas Longarinas Moldadas in Loco",
+      "grade": 97.05,
+      "fee": 800
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Byl Farney",
+      "date": "2025-04-25",
+      "module": "Projeto e Dimensionamento de Pontes em Estrutura Metálica",
+      "grade": 99.75,
+      "fee": 800
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Murilo Meiron",
+      "date": "2025-05-16",
+      "module": "Projeto e Dimensionamento de Pontes em Concreto Armado com Múltiplas Longarinas Pré-fabricadas",
+      "grade": 96.61,
+      "fee": 900
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Flavio Ricardo",
+      "date": "2025-06-27",
+      "module": "Fundações em Estruturas de OAE",
+      "grade": 97.36,
+      "fee": 1200
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Murilo Meiron",
+      "date": "2025-08-29",
+      "module": "Projeto e Dimensionamento de Pontes Cabladas",
+      "grade": 97.74,
+      "fee": 1500
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Rafael",
+      "date": "2025-09-26",
+      "module": "Escaneamento Digital, Drones e Nuvem de Pontos para OAE",
+      "grade": 96.83,
+      "fee": 1200
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Flávio Ricardo",
+      "date": "2025-10-24",
+      "module": "Estabilidade de Taludes e Contenções",
+      "grade": 96.83,
+      "fee": 1200
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Rafael",
+      "date": "2025-11-21",
+      "module": "BIM em Projetos de OAE",
+      "grade": 97.93,
+      "fee": 1200
+    },
+    {
+      "course": "PVB002",
+      "teacher": "Byl Farney",
+      "date": "2025-12-05",
+      "module": "Inspeção de Pontes e Patologias em OAE",
+      "grade": 100,
+      "fee": 1200
+    }
+  ]
+}

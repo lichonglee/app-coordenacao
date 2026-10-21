@@ -1,68 +1,35 @@
-# APP-AGENDA
+# EBPÓS Coordenação
 
-Agenda pessoal responsiva para celular e computador, integrada à agenda padrão do Google Calendar por Google Apps Script.
+Aplicativo de coordenação acadêmica derivado do `app-agenda`, com agenda por turma, módulo e professor, conciliação, painel financeiro, edição dos cadastros, mensagens e tema claro/escuro.
 
-## O que está incluído
+## Cadastro inicial
 
-- Cadastro de compromissos pessoais, universitários e profissionais.
-- Prévia automática dos compromissos já existentes na data escolhida no formulário.
-- A tela inicial abre um painel gráfico com compromissos por semana, categoria e agenda, indicadores dos próximos 30 e 90 dias e os próximos eventos; é possível filtrar o panorama por várias agendas, cada uma identificada pela própria cor.
-- As guias laterais abrem o painel ou a área correspondente mesmo quando o cartão foi ocultado. Abrir uma área não altera a preferência salva de cartões.
-- Manual ilustrado dentro do app, com telas de exemplo para panorama, cadastro, disponibilidade, relatórios, conciliação e celular; todos os dados mostrados são fictícios.
-- A Consulta rápida inicia com a data atual e dois meses à frente, com resultados carregados automaticamente quando seu cartão está visível.
-- Opção de criar compromissos de dia inteiro.
-- Escolha da agenda Google própria em que cada compromisso será criado.
-- Lembretes rápidos como preparar apresentação, subir conteúdo e avaliar a turma.
-- Os lembretes prontos ficam dentro do cartão Novo compromisso e preenchem o formulário ao toque.
-- Atalhos de compromisso preenchem Coordenação Ebpos na agenda COORDENAÇÃO EBPOS e Aula XXX na agenda AULA_PALESTRAS.
-- Cada compromisso pode receber um alerta pop-up do Google Calendar, com seleção da antecedência.
-- Alertas pop-up criados no próprio evento do Google Calendar.
-- Consulta rápida de horários vagos por um ou vários meses (até 12), das 9h às 17h ou em dias inteiros. Com Fins de semana marcado, mostra blocos de sexta a domingo como dia inteiro; desmarcado, exibe todos os dias individualmente. Dias ocupados ficam vermelhos e mostram observações com agenda e compromisso; dias parcialmente disponíveis mantêm os horários livres e também mostram os compromissos existentes.
-- Texto para WhatsApp com os fins de semana livres agrupados por mês, sem horários; fins de semana ocupados podem ser selecionados individualmente para inclusão no mesmo formato.
-- Cartão Conciliação identifica sobreposições de horários em agendas distintas, com nome e cor de cada agenda.
-- O cartão Conciliação permite filtrar quais agendas entram na verificação de conflitos.
-- Relatórios mensais ou por intervalo, com mini calendários mensais, dias marcados na cor da agenda e compromissos listados abaixo de cada calendário; impressão/PDF abre com uma página de visão geral contendo apenas mini calendários em duas colunas, em ordem cronológica; em seguida, dedica uma página a cada mês, com o mini calendário no topo e os compromissos em duas colunas. Inclui cabeçalho, período, agendas selecionadas e data de geração.
-- Agenda próxima e relatórios ficam no mesmo cartão; é possível filtrar ambos por uma ou várias agendas.
-- Layout responsivo para celular e web.
-- Tema escuro e controles para ocultar ou restaurar cartões; os cartões restantes se reorganizam automaticamente.
-- O controle Cartões visíveis inclui o Panorama da agenda; é possível ocultar e restaurar o painel sem perder a configuração dos outros cartões.
-- Escolha uma cor própria para cada agenda com a paleta de cores rápidas ou o seletor personalizado no Panorama. A cor aparece nos gráficos, eventos e demais indicadores de agenda.
-- A consulta de disponibilidade identifica cada conflito com o nome da agenda e uma cor própria.
-- Na Consulta rápida, é possível selecionar uma ou várias agendas e combinar seus conflitos.
-- Agenda próxima aparece primeiro e a grade ajusta a largura quando uma coluna fica sem cartões visíveis.
-- Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v3.14`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+A base veio de `Coordenção_ebpos.xlsx` (Planilha1): 136 registros, 13 turmas, 18 professores e 36 módulos distintos. Foram preservados turma, professor, data, módulo, avaliação e valor. A planilha não informava horários nem duração; esses dados precisam ser preenchidos para conciliação precisa e importação direta ao Google Calendar. A Planilha2 continha valores sem rótulos suficientes e não foi importada. O conteúdo inicial está embutido no app; o arquivo XLSX não é necessário em execução.
 
-## Manual do usuário
+O valor da coluna G foi tratado como pagamento por sessão, de acordo com os registros. Confirme essa interpretação antes de usar o painel em fechamento contábil.
 
-- [Manual ilustrado em PDF](manual/Manual_Agenda_Clara.pdf), com exemplos fictícios e telas sem dados da agenda real.
+## Funcionalidades
 
-## Apps Script é uma boa opção?
+- Criar, atualizar, remover e filtrar sessões por turma, professor e período.
+- Conciliação de conflitos por professor. Quando não há horários, sessões na mesma data geram alerta para revisão.
+- Financeiro de valores cadastrados, status pago/pendente e exportação CSV.
+- Exportação de agenda completa, de uma turma, módulo ou sessão em formato ICS para importar no Google Calendar.
+- Cartões para lembrete individual e espelho de todos os módulos do professor. Revise e envie via WhatsApp ou e-mail.
+- Atualização/importação por CSV UTF-8 e backup JSON no navegador.
+- Importação direta para Calendar com Apps Script, após autorização.
+- Marca EBPÓS, logo oficial e modo claro/escuro.
 
-Sim, para uma aplicação individual como esta. O Apps Script hospeda a interface web e, depois da autorização do titular da conta, acessa o calendário padrão sem manter uma senha ou token em um servidor de terceiros. O projeto pode ser usado sem custo em contas Google comuns, respeitando as cotas aplicáveis do Google. Alertas configurados aqui são lembretes pop-up do próprio Calendar; a entrega de notificações no celular depende das configurações do Google Calendar no aparelho.
-
-## Implantação na sua conta Google
-
-1. Acesse [script.google.com](https://script.google.com/) e crie um projeto independente.
-2. Nas configurações do projeto, defina o fuso horário como **America/Sao_Paulo**.
-3. No editor, substitua o conteúdo de `Code.gs` pelo arquivo homônimo deste repositório. Crie um arquivo HTML chamado `Index` e cole nele o conteúdo de `Index.html`.
-4. Em **Configurações do projeto**, habilite a exibição do arquivo de manifesto `appsscript.json` e substitua pelo manifesto deste repositório (ou configure o mesmo fuso horário e escopo `https://www.googleapis.com/auth/calendar`).
-5. Selecione `getInitialData` no editor e execute uma vez. Revise e conceda o acesso solicitado ao seu Google Calendar.
-6. Clique em **Implantar → Nova implantação → Aplicativo da Web**. Selecione **Executar como: eu** e limite o acesso a **Somente eu** para uso pessoal. Implante e abra a URL gerada.
-7. No celular, abra essa URL no navegador e adicione à tela inicial para acesso rápido.
-
-O Google entrega o app hospedado em seus próprios domínios. Para uso pessoal, mantenha o acesso restrito à sua conta e não compartilhe a URL de implantação.
+A exportação ICS preenche 09:00–17:00 quando a fonte não informa horários e mostra um aviso. Revise esses eventos antes de importar.
 
 ## Demonstração local
 
-Abra `Index.html` no navegador. A demonstração usa exemplos e guarda os novos itens localmente no navegador, sem acessar nem alterar sua conta Google. O botão Google Calendar apenas abre o calendário.
+Abra `Index.html` no navegador. O app usa `localStorage` do navegador atual.
 
-## Limites da consulta de disponibilidade
+## Implantação no Google Apps Script
 
-A busca considera das 9h às 17h ou o dia inteiro, conforme a opção marcada, e os eventos que ocupam horário nas agendas próprias da conta. Selecione os meses inicial e final, em um intervalo de até 12 meses. As setas deslocam o período completo em um mês. Marcar **Fins de semana** consulta sábado e domingo como dias inteiros; se houver compromisso, o dia aparece em vermelho com o título e horário em uma observação. O texto copiado informa apenas os horários livres; não envia mensagens ao WhatsApp. Agendas compartilhadas de outras pessoas não entram na consulta. Confira feriados e exceções antes de confirmar um horário.
+1. Crie projeto independente em [script.google.com](https://script.google.com/).
+2. Copie `Code.gs` e crie um arquivo HTML chamado `Index`, colando o conteúdo de `Index.html`.
+3. Configure `appsscript.json`, fuso `America/Sao_Paulo` e autorize Google Calendar executando `getInitialData`.
+4. Implante como aplicativo da web para a conta da coordenação.
 
-## Arquivos
-
-- `Code.gs` — conexão segura com CalendarApp e operações de agenda.
-- `Index.html` — interface responsiva e demonstração local.
-- `appsscript.json` — fuso horário e permissões solicitadas.
+Os registros iniciais estão embutidos no template e a logo é Data URI. Os dados alterados ficam no navegador. Para uma equipe compartilhar uma única base editável, será necessário configurar um armazenamento compartilhado.
