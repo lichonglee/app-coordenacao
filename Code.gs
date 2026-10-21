@@ -8,13 +8,13 @@ const APP = { title: 'EBPÓS Coordenação' };
 function doGet() {
   const template = HtmlService.createTemplateFromFile('Index');
   template.runtime = 'apps-script';
+  template.seed = JSON.stringify(getSeedData_());
   return template.evaluate().setTitle(APP.title).addMetaTag('viewport', 'width=device-width, initial-scale=1');
 }
 
 
 function include(filename) {
-  const template = HtmlService.createTemplateFromFile(filename);
-  return template.evaluate().getContent();
+  return HtmlService.createHtmlOutputFromFile(filename).getContent();
 }
 
 function getSeedData_() {
