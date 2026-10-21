@@ -57,6 +57,25 @@ function importModules(records, calendarId) {
   return { count: created.length, events: created };
 }
 
+function importAllDayModules(records, calendarId) {
+  if (!Array.isArray(records) || records.length > 500) throw new Error('A importação deve conter até 500 módulos.');
+  const calendar = findWritableCalendar_(calendarId);
+  const created = [];
+  records.forEach(function (item) {
+    const title = [item.course, item.module, item.teacher].map(function (part) { return String(part || '').trim(); }).filter(Boolean).join(' - ');
+    if (!title || !/^\d{4}-\d{2}-\d{2}$/.test(item.date || '')) throw new Error('Há um módulo sem turma, módulo, professor ou data válida.');
+    const date = item.date.split('-').map(Number);
+    const start = new Date(date[0], date[1] - 1, date[2]);
+    const day = start.getDay();
+    if (day !== 0 && day !== 6) throw new Error('O módulo "' + title + '" está em ' + Utilities.formatDate(start, Session.getScriptTimeZone(), 'EEEE') + '. Selecione uma data de sábado ou domingo.');
+    const end = new Date(date[0], date[1] - 1, date[2] + 1);
+    const description = ['Turma: ' + String(item.course || ''), 'Módulo: ' + String(item.module || ''), 'Professor: ' + String(item.teacher || ''), item.notes ? 'Observações: ' + String(item.notes) : ''].filter(Boolean).join('\n');
+    const event = calendar.createAllDayEvent(title, start, { description: description, location: String(item.location || '') });
+    created.push({ id: event.getId(), title: event.getTitle(), date: item.date });
+  });
+  return { count: created.length, events: created };
+}
+
 function findWritableCalendar_(calendarId) {
   const calendars = CalendarApp.getAllOwnedCalendars();
   const fallback = CalendarApp.getDefaultCalendar();
