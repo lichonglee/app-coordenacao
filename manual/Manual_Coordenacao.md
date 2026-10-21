@@ -8,6 +8,8 @@ Guia rápido com telas esquemáticas. Os exemplos ilustram a navegação e não 
 
 Use os cartões de indicadores e as setas para navegar pelos resumos. Os atalhos levam à agenda, ao financeiro, à atualização de cadastros e às mensagens para professores.
 
+No cartão **Desempenho dos cursos**, selecione uma turma para ver uma barra por módulo. As notas são exibidas da maior para a menor; quando há mais de uma nota para o mesmo módulo, o gráfico mostra a média.
+
 ## Agenda
 
 ![Tela esquemática da agenda com filtros e módulos](telas/agenda.svg)
