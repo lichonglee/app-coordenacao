@@ -12,10 +12,12 @@ O valor da coluna G foi tratado como pagamento por sessão, de acordo com os reg
 
 - Criar, atualizar, remover e filtrar sessões por turma, professor e período.
 - Conciliação de conflitos por professor. Quando não há horários, sessões na mesma data geram alerta para revisão.
-- Financeiro de valores cadastrados, status pago/pendente e exportação CSV.
+- Financeiro de valores cadastrados, status, campo “Receber NF” e exportação com seleção de colunas para Excel ou PDF.
 - Exportação de agenda completa, de uma turma, módulo ou sessão em formato ICS para importar no Google Calendar.
 - Guia de avaliação de professores: leitura de planilhas XLS/XLSX, médias gerais e por critério, comentários abertos e mini relatório exportável. A avaliação de exemplo fornecida está carregada.
-- Visão geral com média das notas cadastradas por curso.
+- Visão geral com gráfico das médias por curso, filtro e paletas de cores, além de navegação entre cartões.
+- Arquivamento e restauração de turmas, preservando os registros.
+- Painel individual de professores com médias acumuladas das avaliações importadas.
 - Cartões para lembrete individual e espelho de todos os módulos do professor. Revise e envie via WhatsApp ou e-mail.
 - Atualização/importação por CSV UTF-8 e backup JSON no navegador.
 - Importação direta para Calendar com Apps Script, após autorização.
