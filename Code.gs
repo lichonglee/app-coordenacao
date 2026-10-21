@@ -1,9 +1,9 @@
 /**
- * Agenda Clara — Google Apps Script backend
+ * APP-AGENDA — Google Apps Script backend
  * Configure America/Sao_Paulo as the script time zone before deploying.
  */
 const APP = {
-  title: 'Agenda Clara',
+  title: 'APP-AGENDA',
   categories: ['Pessoal', 'Universitário', 'Profissional'],
   colors: { 'Pessoal': CalendarApp.EventColor.PALE_BLUE, 'Universitário': CalendarApp.EventColor.MAUVE, 'Profissional': CalendarApp.EventColor.PALE_GREEN }
 };
