@@ -1,9 +1,7 @@
 {
-  "timeZone": "America/Sao_Paulo",
-  "dependencies": {},
+  "timeZone": "America/New_York",
+  "dependencies": {
+  },
   "exceptionLogging": "STACKDRIVER",
-  "runtimeVersion": "V8",
-  "oauthScopes": [
-    "https://www.googleapis.com/auth/calendar"
-  ]
+  "runtimeVersion": "V8"
 }
