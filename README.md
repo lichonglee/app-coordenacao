@@ -6,7 +6,9 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 
 - Cadastro de compromissos pessoais, universitários e profissionais.
 - Prévia automática dos compromissos já existentes na data escolhida no formulário.
-- A página abre com Consulta rápida visível, intervalo do dia atual até dois meses à frente e resultados carregados automaticamente.
+- A tela inicial abre um painel gráfico com compromissos por semana, categoria e agenda, indicadores dos próximos 30 e 90 dias e os próximos eventos; é possível filtrar o panorama por agenda.
+- As guias laterais abrem o painel ou a área correspondente mesmo quando o cartão foi ocultado. Abrir uma área não altera a preferência salva de cartões.
+- A Consulta rápida inicia com a data atual e dois meses à frente, com resultados carregados automaticamente quando seu cartão está visível.
 - Opção de criar compromissos de dia inteiro.
 - Escolha da agenda Google própria em que cada compromisso será criado.
 - Lembretes rápidos como preparar apresentação, subir conteúdo e avaliar a turma.
@@ -26,7 +28,7 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Na Consulta rápida, é possível selecionar uma ou várias agendas e combinar seus conflitos.
 - Agenda próxima aparece primeiro e a grade ajusta a largura quando uma coluna fica sem cartões visíveis.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v3.10`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+- Identificação da versão (`v3.11`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Manual do usuário
 
