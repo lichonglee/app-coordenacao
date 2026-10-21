@@ -15,7 +15,7 @@ O valor da coluna G foi tratado como pagamento por sessão, de acordo com os reg
 - Financeiro de valores cadastrados, status, data “Receber NF” e exportação com seleção de colunas para Excel ou PDF.
 - Envio de módulos selecionados individualmente para uma agenda Google conectada, como evento de dia inteiro, com título turma - módulo - professor; valida sábado/domingo. Exportação ICS continua disponível.
 - Guia de avaliação de professores: leitura de planilhas XLS/XLSX, médias gerais e por critério, comentários abertos e mini relatório exportável. A avaliação de exemplo fornecida está carregada.
-- Visão geral com gráfico das médias por curso, filtro e paletas em escala escura para clara conforme a ordem de desempenho, além de navegação entre cartões.
+- Visão geral com gráfico das médias por curso, paletas em escala escura para clara e seletor de ordenação dos módulos por sequência cronológica ou nota.
 - Arquivamento e restauração de turmas, preservando os registros.
 - Painel individual de professores combina as avaliações da base e pesquisas XLS/XLSX; pesquisas repetidas são identificadas e podem ser removidas.
 - Cartões para lembrete individual e espelho de todos os módulos do professor. Revise e envie via WhatsApp ou e-mail.
