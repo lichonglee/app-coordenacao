@@ -14,7 +14,7 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Atalhos de compromisso preenchem Coordenação Ebpos na agenda COORDENAÇÃO EBPOS e Aula XXX na agenda AULA_PALESTRAS.
 - Cada compromisso pode receber um alerta pop-up do Google Calendar, com seleção da antecedência.
 - Alertas pop-up criados no próprio evento do Google Calendar.
-- Consulta rápida de horários vagos por um ou vários meses (até 12), das 9h às 17h ou em dias inteiros. Quando fins de semana estão marcados, a consulta mostra somente blocos de sexta a domingo como dia inteiro; qualquer compromisso nesses dias marca o bloco em vermelho com observações.
+- Consulta rápida de horários vagos por um ou vários meses (até 12), das 9h às 17h ou em dias inteiros. Com Fins de semana marcado, mostra blocos de sexta a domingo como dia inteiro; desmarcado, exibe todos os dias individualmente. Dias ocupados ficam vermelhos e mostram observações com agenda e compromisso; dias parcialmente disponíveis mantêm os horários livres e também mostram os compromissos existentes.
 - Texto para WhatsApp com os fins de semana livres agrupados por mês, sem horários; fins de semana ocupados podem ser selecionados individualmente para inclusão no mesmo formato.
 - Cartão Conciliação identifica sobreposições de horários em agendas distintas, com nome e cor de cada agenda.
 - O cartão Conciliação permite filtrar quais agendas entram na verificação de conflitos.
@@ -26,7 +26,7 @@ Agenda pessoal responsiva para celular e computador, integrada à agenda padrão
 - Na Consulta rápida, é possível selecionar uma ou várias agendas e combinar seus conflitos.
 - Agenda próxima aparece primeiro e a grade ajusta a largura quando uma coluna fica sem cartões visíveis.
 - Demonstração local sem conexão à conta Google.
-- Identificação da versão (`v3.9`) e data atual (DD/MM/AAAA) ao lado do nome do app.
+- Identificação da versão (`v3.10`) e data atual (DD/MM/AAAA) ao lado do nome do app.
 
 ## Manual do usuário
 
