@@ -16,9 +16,10 @@ O valor da coluna G foi tratado como pagamento por sessão, de acordo com os reg
 - Envio de módulos selecionados individualmente para uma agenda Google conectada, como evento de dia inteiro, com título turma - módulo - professor; valida sábado/domingo. Exportação ICS continua disponível.
 - Guia de avaliação de professores: leitura de planilhas XLS/XLSX, médias gerais e por critério, comentários abertos e mini relatório exportável. A avaliação de exemplo fornecida está carregada.
 - Visão geral com gráfico das médias por curso, paletas em escala escura para clara e seletor de ordenação dos módulos por sequência cronológica ou nota.
-- Arquivamento e restauração de turmas, preservando os registros.
+- Arquivamento e restauração de turmas, preservando os registros; filtros de agenda, financeiro e desempenho permitem ver todas, somente ativas ou somente não ativas. Lembretes e espelhos dos professores omitem turmas arquivadas.
 - Painel individual de professores combina as avaliações da base e pesquisas XLS/XLSX; pesquisas repetidas são identificadas e podem ser removidas.
 - Cartões para lembrete individual e espelho de todos os módulos do professor. Revise e envie via WhatsApp ou e-mail.
+- Importação de cronogramas DOCX/PDF com tabela por módulo, ano, mês e dias; permita atribuir o docente, informe horários opcionais e confira choques com a agenda cadastrada e os demais itens antes de confirmar cada módulo.
 - Atualização/importação por CSV UTF-8 e backup JSON no navegador.
 - Importação direta para Calendar com Apps Script, após autorização.
 - Marca EBPÓS, logo oficial e modo claro/escuro.
